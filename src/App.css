@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: Poppins;
+}
+
+.header-bg {
+  background: url('../public/images/main.jpg') #4c70b0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  margin-top: -60px;
+}
+.text-white h1 {
+  font-size: 50px;
+}
+.text-white p {
+  font-size: 20px;
+  color: #9fa6b3;
+  margin-top: 5px;
+}
+
+/* In your CSS file (e.g., Aboutus.css) */
+.video-container {
+  width: 100%; /* Ensure container takes full width of the column */
+  overflow: hidden; /* Prevent overflow issues */
+}
+
+.video-container video {
+  width: 100%; /* Ensure video takes full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 20px;
+}
+.programs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.program {
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.program img {
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(34, 83, 168, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.program:hover .box {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.program:hover img {
+  transform: scale(1.05);
+}
+/* Base styles */
+.teacher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  border: 2px solid black;
+  gap: 5px;
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.teacher-container {
+  overflow: hidden;
+  width: 840px; /* Default width for larger screens showing two cards */
+}
+
+.teacher-scroll {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: max-content;
+}
+
+.teachercard {
+  width: 400px;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.teachercard:hover {
+  transform: scale(1.02);
+}
+
+.teacherimg img {
+  height: 150px;
+  width: 150px;
+  border: 5px solid #483ba8;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.teacherdetails h2, .teacherdetails h4 {
+  margin: 5px 0;
+}
+
+.arrowimg {
+  height: 60px;
+  width: 60px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.arrowimg.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Styles for smaller screens */
+@media (max-width: 768px) {
+  .teacher {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .teacher-container {
+    width: 100%; /* Full width to show only one card */
+  }
+
+  .teacher-scroll {
+    transform: translateX(-${currentIndex * 100}%); /* Adjust for one card at a time */
+  }
+
+  .teachercard {
+    width: 100%; /* Ensure full width on smaller screens */
+    margin-right: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .arrowimg {
+    height: 40px;
+    width: 40px;
+    margin: 10px 0;
+  }
+}
+
+.address img{
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+}
+input,textarea{
+  background-color: #e4ebf2 !important;
+  margin-top: 2px;
+}
+
+@media screen and (max-width:600px) {
+  
+  .contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    margin: 1px;
+    width: 100%;
+    font-size: 15px;
+    form{
+      width: 280%;
+    }
+    .message{
+      width: 100%;
+    }
+    img{
+      height: 25px;
+      width: 25px;
+    }
+    
+  }
+}
+
