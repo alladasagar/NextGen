@@ -10,19 +10,19 @@ const Programs = () => {
             <Row className="programs d-flex justify-content-center my-5 ">
                 <Col xs={12} md={4} className="program my-2">
                     <div className="position-relative">
-                        <img src="/images/music.jpg" className="img-fluid rounded" alt="Music Program" />
+                        <img src="/images/music.png" className="img-fluid rounded" alt="Music Program" />
                         <div className="box">MUSIC</div>
                     </div>
                 </Col>
                 <Col xs={12} md={4} className="program my-2">
                     <div className="position-relative">
-                        <img src="/images/dance.jpg" className="img-fluid rounded" alt="Dance Program" />
+                        <img src="/images/dance.png" className="img-fluid rounded" alt="Dance Program" />
                         <div className="box">DANCE</div>
                     </div>
                 </Col>
                 <Col xs={12} md={4} className="program my-2">
                     <div className="position-relative">
-                        <img src="/images/play.webp" className="img-fluid rounded" alt="Games Program" />
+                        <img src="/images/play.png" className="img-fluid rounded" alt="Games Program" />
                         <div className="box">GAMES</div>
                     </div>
                 </Col>
