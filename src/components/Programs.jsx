@@ -16,7 +16,7 @@ const Programs = () => {
                 </Col>
                 <Col xs={12} md={4} className="program my-2">
                     <div className="position-relative">
-                        <img src="/images/dance.jpg" className="img-fluid rounded" alt="Dance Program" />
+                        <img src="/images/dance.png" className="img-fluid rounded" alt="Dance Program" />
                         <div className="box">DANCE</div>
                     </div>
                 </Col>
